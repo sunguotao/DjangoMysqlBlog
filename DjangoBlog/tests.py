@@ -4,9 +4,9 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: systemsgt.cn
 @license: MIT Licence 
-@contact: liangliangyy@gmail.com
+@contact: 18653076096@163.com
 @site: https://www.lylinux.net/
 @software: PyCharm
 @file: tests.py
@@ -36,7 +36,7 @@ class DjangoBlogTest(TestCase):
         import os
         ```  
         
-        [url](https://www.lylinux.org/)  
+        [url](http://www.systemsgt.cn)  
           
         [ddd](http://www.baidu.com)  
         

@@ -21,8 +21,8 @@ class ArticleTest(TestCase):
 
     def test_validate_article(self):
         site = Site.objects.get_current().domain
-        user = BlogUser.objects.get_or_create(email="liangliangyy@gmail.com", username="liangliangyy")[0]
-        user.set_password("liangliangyy")
+        user = BlogUser.objects.get_or_create(email="18653076096@163.com", username="systemsgt.cn")[0]
+        user.set_password("systemsgt.cn")
         user.is_staff = True
         user.is_superuser = True
         user.save()
@@ -86,18 +86,18 @@ class ArticleTest(TestCase):
 
         f = BlogSearchForm()
         f.search()
-        self.client.login(username='liangliangyy', password='liangliangyy')
+        self.client.login(username='systemsgt.cn', password='systemsgt.cn')
         from DjangoBlog.spider_notify import SpiderNotify
         SpiderNotify.baidu_notify([article.get_full_url()])
         rsp = self.client.get('/refresh/')
         self.assertEqual(rsp.status_code, 200)
         from blog.templatetags.blog_tags import gravatar_url, gravatar
-        u = gravatar_url('liangliangyy@gmail.com')
-        u = gravatar('liangliangyy@gmail.com')
+        u = gravatar_url('18653076096@163.com')
+        u = gravatar('18653076096@163.com')
 
     def test_validate_feed(self):
-        user = BlogUser.objects.get_or_create(email="liangliangyy12@gmail.com", username="liangliangyy")[0]
-        user.set_password("liangliangyy")
+        user = BlogUser.objects.get_or_create(email="systemsgt.cn12@gmail.com", username="systemsgt.cn")[0]
+        user.set_password("systemsgt.cn")
         user.save()
 
         response = self.client.get('/feed/')

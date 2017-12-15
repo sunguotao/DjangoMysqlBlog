@@ -16,10 +16,10 @@ class AccountTest(TestCase):
 
     def test_validate_account(self):
         site = Site.objects.get_current().domain
-        user = BlogUser.objects.create_superuser(email="liangliangyy1@gmail.com",
-                                                 username="liangliangyy1", password="liangliangyy1")
+        user = BlogUser.objects.create_superuser(email="systemsgt.cn1@gmail.com",
+                                                 username="systemsgt.cn1", password="systemsgt.cn1")
 
-        self.client.login(username='liangliangyy1', password='liangliangyy1')
+        self.client.login(username='systemsgt.cn1', password='systemsgt.cn1')
         response = self.client.get('/admin/')
         self.assertEqual(response.status_code, 200)
 

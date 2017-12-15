@@ -4,10 +4,10 @@
 
 """
 @version: ??
-@author: liangliangyy
+@author: systemsgt.cn
 @license: MIT Licence
-@contact: liangliangyy@gmail.com
-@site: https://www.lylinux.org/
+@contact: 18653076096@163.com
+@site: http://www.systemsgt.cn
 @software: PyCharm
 @file: forms.py
 @time: 2016/11/12 下午2:45

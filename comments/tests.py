@@ -18,10 +18,10 @@ class CommentsTest(TestCase):
 
     def test_validate_comment(self):
         site = Site.objects.get_current().domain
-        user = BlogUser.objects.create_superuser(email="liangliangyy1@gmail.com",
-                                                 username="liangliangyy1", password="liangliangyy1")
+        user = BlogUser.objects.create_superuser(email="systemsgt.cn1@gmail.com",
+                                                 username="systemsgt.cn1", password="systemsgt.cn1")
 
-        self.client.login(username='liangliangyy1', password='liangliangyy1')
+        self.client.login(username='systemsgt.cn1', password='systemsgt.cn1')
 
         category = Category()
         category.name = "categoryccc"
@@ -72,7 +72,7 @@ class CommentsTest(TestCase):
         import os
         ```  
         
-        [url](https://www.lylinux.org/)  
+        [url](http://www.systemsgt.cn)  
           
         [ddd](http://www.baidu.com)  
         
