@@ -95,7 +95,7 @@ DATABASES = {
         'NAME': 'djangoblog',
         'USER': 'root',
         'PASSWORD': 'sunguotao',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': 3306,
     }
 }
