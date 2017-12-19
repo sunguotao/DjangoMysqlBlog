@@ -158,7 +158,7 @@ DATE_TIME_FORMAT = '%Y-%m-%d'
 
 SITE_NAME = '向阳的寒冬'
 SITE_URL = 'http://www.lylinux.net'
-SITE_DESCRIPTION = '&涛声依旧'
+SITE_DESCRIPTION = '&&涛声依旧'
 SITE_SEO_DESCRIPTION = '小站主要用来分享和记录学习经验,教程,记录个人生活的点滴以及一些随笔.欢迎大家访问小站'
 SITE_SEO_KEYWORDS = 'linux,apache,mysql,服务器,ubuntu,shell,web,csharp,.net,asp,mac,swift,python,django'
 ARTICLE_SUB_LENGTH = 300
