@@ -46,4 +46,4 @@ urlpatterns = [
                   url(r'^feed/$', DjangoBlogFeed()),
                   url(r'^search', include('haystack.urls'), name='search'),
                   url(r'', include('servermanager.urls', namespace='servermanager', app_name='servermanagers'))
-              ] 
+              ]

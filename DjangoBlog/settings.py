@@ -179,21 +179,21 @@ PAGINATE_BY = 10
 CACHE_CONTROL_MAX_AGE = 2592000
 # cache setting
 
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'TIMEOUT': 10800,
-        'LOCATION': '127.0.0.1:11211',
-    },
-    'locmemcache': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-        'TIMEOUT': 10800,
-        'LOCATION': 'unique-snowflake',
-    }
-}
-CACHE_MIDDLEWARE_SECONDS = 60 * 60 * 10
-CACHE_MIDDLEWARE_KEY_PREFIX = "djangoblog"
-CACHE_MIDDLEWARE_ALIAS = 'default'
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#         'TIMEOUT': 10800,
+#         'LOCATION': '127.0.0.1:11211',
+#     },
+#     'locmemcache': {
+#         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+#         'TIMEOUT': 10800,
+#         'LOCATION': 'unique-snowflake',
+#     }
+# }
+# CACHE_MIDDLEWARE_SECONDS = 60 * 60 * 10
+# CACHE_MIDDLEWARE_KEY_PREFIX = "djangoblog"
+# CACHE_MIDDLEWARE_ALIAS = 'default'
 
 # SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 # SESSION_CACHE_ALIAS = 'default'
